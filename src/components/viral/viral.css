@@ -129,13 +129,13 @@ img {
 
   .viral-outer-container {
 
-    display: flex;
+     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column; /* Adjust to stack elements vertically */
-    height: 60vh; /* Adjust as needed */
+    height: 80vh; /* Adjust as needed */
     overflow-x: hidden;
-      margin-bottom: 50px;
+    margin-bottom: 50px;
   
     }
 
