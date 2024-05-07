@@ -135,6 +135,7 @@ img {
     flex-direction: column; /* Adjust to stack elements vertically */
     height: 60vh; /* Adjust as needed */
     overflow-x: hidden;
+      margin-bottom: 50px;
   
     }
 
