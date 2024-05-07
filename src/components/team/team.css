@@ -1,0 +1,129 @@
+/* data.css */
+
+.team-container {
+  margin-top: 150px;
+  position: relative; /* Set container as relative for absolute positioning */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Space items evenly */
+  padding: 80px;
+
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #f0f0f0, #e4e4e4); 
+
+}
+
+.team-content {
+  flex: 1;
+  margin-right: 20px; /* Add some space between text and image */
+  word-wrap: break-word; /* Ensure text wraps within container */
+}
+
+.team-image {
+  max-width: 800px; /* Set max-width for the image */
+  height: auto;
+  border-radius: 8px;
+  position: absolute; /* Set image as absolute for positioning */
+  top: 50px;
+  bottom: 20px; /* Move image 20px from the bottom */
+  right: 100px; /* Align image to the right */
+}
+
+/* Styling for heading */
+.team-content h1 {
+  font-weight: bold;
+  color: #333;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.team-content h2 {
+  color: #464646;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styling for paragraphs */
+.team-content p {
+  color: #666;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+
+.bold-text {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+overflow-x: hidden;
+padding: 20px;
+
+  }
+
+  .team-content {
+    margin-right: 0; /* Reset margin for smaller screens */
+    margin-bottom: 20px; /* Add some space between text and image on smaller screens */
+    padding-right: 0px; /* Increase margin from the left side */
+  }
+  .team-content h1 {
+
+    font-size: 20px;
+ 
+  }
+  .team-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .team-image {
+    max-width: 100%; /* Set max-width to ensure image fits within container */
+    position: static; /* Reset position for smaller screens */
+    margin-top: 20px; /* Add margin from the top */
+  }
+
+}
+/* Add these styles to your CSS file */
+
+/* Add this to your CSS file */
+
+.team-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.team-container ul li {
+  position: relative;
+  padding-left: 30px; /* Add space for custom bullet icon */
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.team-container ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px; /* Adjust size as needed */
+  height: 10px; /* Adjust size as needed */
+  background-color: #ffee00; /* Adjust color as needed */
+  border-radius: 50%;
+  animation: bulletAnimation 1s ease infinite alternate; /* Add animation */
+}
+
+@keyframes bulletAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
