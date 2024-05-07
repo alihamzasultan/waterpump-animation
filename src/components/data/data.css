@@ -52,7 +52,7 @@
   }
 
   .text-content {
-    margin-top: 100px;
+  
     margin-right: 0; /* Reset margin for smaller screens */
     margin-bottom: 20px; /* Add some space between text and image on smaller screens */
     padding-right: 0px; /* Increase margin from the left side */
